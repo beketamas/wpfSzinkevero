@@ -96,6 +96,15 @@ namespace WpfApp3
             string[] tagok = lbSzinek.SelectedItem.ToString().Split(';');
 
             rctTeglalap.Fill = new SolidColorBrush(Color.FromRgb(Convert.ToByte(tagok[0]), Convert.ToByte(tagok[1]), Convert.ToByte(tagok[2])));
+            lbPiros.Content = tagok[0];
+            lbZold.Content = tagok[1];
+            lbKek.Content = tagok[2];
+
+            sliPiros.Value = Convert.ToInt32(tagok[0]);
+            sliZold.Value = Convert.ToInt32(tagok[1]);
+            sliKek.Value = Convert.ToInt32(tagok[2]);
+
+
         }
     }
 }
